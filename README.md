@@ -72,7 +72,7 @@ This project uses Git Flow for developing.
 Coding Guidelines
 -------
 - BEM methodology is followed for sass files.
-- Strict typing is followed in all JS files.
+- Every news source will have its own adapter to convert the data into common format used by the application. This makes it easier if an API changes its structure in future.
 - API path is loaded from a separate file. It will easier to change the API path in future.
 
 **ESLint**
