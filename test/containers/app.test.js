@@ -7,6 +7,7 @@ import store from '../../app/redux/store';
 
 describe('Main container', () => {
   it('renders correctly', () => {
+    Object.values = (obj) => Object.keys(obj).map(key => obj[key]);
     const tree = renderer.create(
       <Provider store={store}>
         <App />

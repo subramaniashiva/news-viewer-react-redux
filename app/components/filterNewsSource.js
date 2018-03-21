@@ -8,7 +8,7 @@ export default class FilterNewsSource extends Component {
     this.props.handleFilterChange(event.target.value);
   }
   render() {
-    let optionItems = this.props.newsSourceList.map((newsSource, index) => 
+    let optionItems = this.props.newsSourceList && this.props.newsSourceList.map((newsSource, index) =>
       <option key={index}>{newsSource}</option>
       )
     return (
