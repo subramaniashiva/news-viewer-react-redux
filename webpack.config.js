@@ -12,6 +12,7 @@ const ENV = process.env.NODE_ENV || 'development';
 let configObj = {
 	context: PATH.resolve('app'),
 	entry: [
+    'babel-polyfill',
 		'./index.js'
 	],
   output: {

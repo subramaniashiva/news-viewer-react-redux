@@ -7,10 +7,12 @@
 export const SET_LOADING = 'set_loading';
 
 // Action creator
-export function set_loading(data) {
+export function setLoading(data) {
   return {
     type: SET_LOADING,
-    data
+    payload: {
+      data
+    }
   }
 }
 
@@ -18,7 +20,7 @@ export function set_loading(data) {
 export default function loading(state = false, action) {
   switch(action.type) {
     case SET_LOADING:
-      return action.data;
+      return action.payload.data;
     default:
       return state;
   }

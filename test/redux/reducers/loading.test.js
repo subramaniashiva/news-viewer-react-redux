@@ -6,10 +6,12 @@ describe('loading reducer', () => {
 
     const expectedAction = {
       type: loading.SET_LOADING,
-      data: true
+      payload: {
+        data: true
+      }
     }
 
-    const actualAction = loading.set_loading(true);
+    const actualAction = loading.setLoading(true);
     expect(actualAction).toEqual(expectedAction);
   })
 });

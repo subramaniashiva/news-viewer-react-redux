@@ -1,3 +1,13 @@
 @import "reset";
 @import "constants";
 @import "base";
+
+.container {
+  margin: 0 auto;
+  @media(min-width: $desktop-min-width) {
+    width: 75%;
+  }
+  @media(max-width: $mobile-max-width) {
+    width: 100%;
+  }
+}
