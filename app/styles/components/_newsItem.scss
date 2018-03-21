@@ -1,0 +1,21 @@
+@import "../constants";
+
+.news-item {
+  padding: 16px;
+  background: $div-bg-light;
+  border-bottom: 1px solid $div-border-color;
+  border-radius: 2px;
+  .news-item__title {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: $font-size-huge;
+    margin: 0 0 4px 0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .news-item__info {
+    font-size: $font-size-small;
+    color: $text-insignificant-color;
+    margin-top: 6px;
+  }
+}

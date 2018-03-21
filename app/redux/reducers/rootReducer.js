@@ -5,7 +5,11 @@
 import { combineReducers } from 'redux';
 
 import loading from './loading';
+import newsList from './newsList';
+import currentSource from './currentSource';
 
 export default combineReducers({
   loading,
+  newsList,
+  currentSource
 });
