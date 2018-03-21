@@ -11,7 +11,7 @@ describe('loading reducer', () => {
       }
     }
 
-    const actualAction = loading.set_loading(true);
+    const actualAction = loading.setLoading(true);
     expect(actualAction).toEqual(expectedAction);
   })
 });
