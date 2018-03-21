@@ -1,0 +1,9 @@
+@import "../constants";
+
+.header {
+  width: 100%;
+  padding: 24px 16px;
+  background: #333;
+  color: $text-white-color;
+  font-size: $font-size-humongous;
+}

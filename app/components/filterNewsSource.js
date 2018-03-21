@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import '../styles/components/_filterNewsSoruce.scss';
+
 export default class FilterNewsSource extends Component {
   handleChange(event) {
     this.props.handleFilterChange(event.target.value);
@@ -11,6 +13,7 @@ export default class FilterNewsSource extends Component {
       )
     return (
       <div>
+        <span className="filter-text">Filter News Source: </span>
         <select value={this.props.selectedSource} onChange={this.handleChange.bind(this)}>
           {optionItems}
         </select>

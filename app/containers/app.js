@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import Loading from '../components/loading';
 import NewsList from '../components/newsList';
 import FilterNewsSource from '../components/filterNewsSource';
+import Header from '../components/header';
+import NoNewsItem from '../components/noNewsItem';
 
 import { loadNewsList } from '../redux/reducers/newsList';
 import { setCurrentSource } from '../redux/reducers/currentSource';
@@ -24,14 +26,24 @@ export class App extends Component {
   }
   render () {
     let newsResourcesList = Object.values(NEWS_RESOURCES);
+    const newsListFiltered = this.getNewsList();
     return (
       <div>
+        <Header />
         {!this.props.loading ?
           (
             <div className="container">
-              <FilterNewsSource newsSourceList={newsResourcesList} selectedSource={this.props.currentSource}
-                handleFilterChange={this.handleFilterChange.bind(this)}></FilterNewsSource>
-              <NewsList list={this.getNewsList()}></NewsList>
+              <div className="filter-container">
+                <FilterNewsSource newsSourceList={newsResourcesList} selectedSource={this.props.currentSource}
+                  handleFilterChange={this.handleFilterChange.bind(this)}></FilterNewsSource>
+              </div>
+              <div className="list-container">
+              {
+                newsListFiltered && newsListFiltered.length ?
+                  <NewsList list={newsListFiltered}></NewsList> :
+                  <NoNewsItem />
+              }
+              </div>
             </div>
           ) :
           (
