@@ -1,5 +1,5 @@
 /*
-  Loading component - stateless
+  Header component - stateless
 */
 import React from 'react';
 
