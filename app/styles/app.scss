@@ -8,13 +8,16 @@
     width: 75%;
   }
   @media(max-width: $mobile-max-width) {
-    width: 100%;
+    width: 96%;
   }
 }
 .filter-container {
   display: flex;
   justify-content: flex-end;
   margin: 16px 0;
+  @media(max-width: $mobile-max-width) {
+    justify-content: center;
+  }
 }
 .list-container {
   margin-bottom: 16px;
