@@ -1,5 +1,5 @@
 const NEWS_RESOURCES = {
-  ALL: 'ALL',
+  ALL: 'All',
   GUARDIAN: 'Guardian',
   OPENNEWS: 'Open News API'
 }

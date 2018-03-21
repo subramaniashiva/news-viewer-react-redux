@@ -4,6 +4,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {getDateString} from '../utils/helper';
+
 import '../styles/components/_newsItem.scss';
 
 const NewsItem = (props) => (
@@ -11,7 +13,7 @@ const NewsItem = (props) => (
     <a href={props.news.url} target="_blank" className="news-item__title">{props.news.title}</a>
     <p className="news-item__info">
       <span>{props.news.newsSourceCategory} - </span>
-      <span>{props.news.date}</span>
+      <span>{getDateString(props.news.date)}</span>
     </p>
   </div>
 );
