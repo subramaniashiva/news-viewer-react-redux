@@ -1,5 +1,8 @@
 @import "../constants";
 
+$select-box-bg: #365b92;
+$select-drop-down-bg: #253b5f;
+
 .filter-news-source {
   display: flex;
   flex-direction: row;
@@ -21,7 +24,7 @@ select {
   outline: 0;
   box-shadow: none;
   border: 0 !important;
-  background: #365b92;
+  background: $select-box-bg;
   background-image: none;
 }
 /* Custom Select */
@@ -31,7 +34,7 @@ select {
   width: 200px;
   height: 36px;
   line-height: 36px;
-  background: #365b92;
+  background: $select-box-bg;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -54,7 +57,7 @@ select::-ms-expand {
   right: 0;
   bottom: 0;
   padding: 0 12px;
-  background: #253b5f;
+  background: $select-drop-down-bg;
   pointer-events: none;
   color: #fff;
   font-size: 12px;
