@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import '../styles/components/_filterNewsSoruce.scss';
+import '../styles/components/_filterNewsSource.scss';
 
 export default class FilterNewsSource extends Component {
   handleChange(event) {
@@ -12,11 +12,13 @@ export default class FilterNewsSource extends Component {
       <option key={index}>{newsSource}</option>
       )
     return (
-      <div>
+      <div className="filter-news-source">
         <span className="filter-text">Filter News Source: </span>
-        <select value={this.props.selectedSource} onChange={this.handleChange.bind(this)}>
-          {optionItems}
-        </select>
+        <div className="select-container">
+          <select value={this.props.selectedSource} onChange={this.handleChange.bind(this)}>
+            {optionItems}
+          </select>
+        </div>
       </div>
     )
   }
@@ -25,5 +27,5 @@ export default class FilterNewsSource extends Component {
 FilterNewsSource.propTypes = {
   newsSourceList: PropTypes.array,
   selectedSource: PropTypes.string,
-  handleFilterChange: PropTypes.function
+  handleFilterChange: PropTypes.func
 }
