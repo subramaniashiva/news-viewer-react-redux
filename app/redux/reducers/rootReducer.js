@@ -5,7 +5,9 @@
 import { combineReducers } from 'redux';
 
 import loading from './loading';
+import newsList from './newsList';
 
 export default combineReducers({
   loading,
+  newsList,
 });
