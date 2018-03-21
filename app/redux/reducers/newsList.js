@@ -1,8 +1,8 @@
 const defaultState = [];
 
-export const SET_NEWS_LIST = 'SET_NEWS_LIST';
+export const SET_NEWS_LIST = 'set_news_list';
 
-export const LOAD_NEWS_LIST = 'LOAD_NEWS_LIST';
+export const LOAD_NEWS_LIST = 'load_news_list';
 
 export function setNewsList(data) {
   return {
