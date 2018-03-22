@@ -8,7 +8,7 @@ Setup
 
 1)  Clone this repo using the following command
 
-`git@github.com:subramaniashiva/news-viewer-react-redux.git`
+`git clone git@github.com:subramaniashiva/news-viewer-react-redux.git`
 
 
 2)  Move to the repo that you have just cloned and run the following command
