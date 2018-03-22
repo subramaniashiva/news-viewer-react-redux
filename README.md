@@ -1,6 +1,7 @@
 News Viewer
 ===================
 This application fetches news from multiple open source News APIs and displays it to the user. The user can also filter the news by the source. The application is built using React, Redux, ES6, SCSS, Jest.
+The application is responsive and can work till 320px. No frameworks have been used for making the app responsive.
 
 Setup
 -----
